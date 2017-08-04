@@ -41,7 +41,7 @@ methods: {
   <!-- Returns "Hello World!" even after the function sayHello() overwrites it  -->
   ```
 
-- `v-html`: tells VueJS to render HTML content or code, which bypasses its default behavior  - escaping HTML and only rendering text. This default behavior inhibits cross-side scripting attacks.
+- `v-html`: tells VueJS to render HTML content or code, which bypasses its default behavior  - escaping HTML and only rendering text. This default behavior inhibits cross-side scripting attacks.  **USE CAREFULLY!**
 ```javascript
 //JS
 data: {
@@ -57,6 +57,6 @@ finishedLink: '<a href="http://surfing-chef.com">Surfing-Chef.com</a>'
     <p v-html="finishedLink"></p>
 
   <!-- the v-html directive will ensure the finishedLink interpolated attribute
-      is rendered as HTML not text, making it a working link -->  
+      is rendered as raw HTML not text, making it a working link -->  
   </div>
   ```
