@@ -61,6 +61,8 @@ finishedLink: '<a href="http://surfing-chef.com">Surfing-Chef.com</a>'
   </div>
   ```
 
+**Events and Listeners**  
+
   - `v-on`: listens to an element to receive a DOM event from our template. It then specifies a method to execute when the DOM event occurs.
   ```javascript
   //JS
@@ -86,8 +88,12 @@ finishedLink: '<a href="http://surfing-chef.com">Surfing-Chef.com</a>'
       <button v-on:click="increase">Click Me</button>
       <p>{{ counter }}</p>
     </div>
-  
+
     <!-- v-on waits for a click event from the button to
     call the increase method -->  
     </div>
-    ```
+    ```  
+
+- Passing custom arguments with events:
+  - `v-on:click="increase(arg)"`  
+  - use reserved `$event` variable to access event object properties
