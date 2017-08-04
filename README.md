@@ -41,4 +41,22 @@ methods: {
   <!-- Returns "Hello World!" even after the function sayHello() overwrites it  -->
   ```
 
-`v-html`: 
+- `v-html`: tells VueJS to render HTML content or code, which bypasses its default behavior  - escaping HTML and only rendering text. This default behavior inhibits cross-side scripting attacks.
+```javascript
+//JS
+data: {
+title: 'Hello World!',
+link: 'http://surfing-chef.com',
+finishedLink: '<a href="http://surfing-chef.com">Surfing-Chef.com</a>'
+},
+```
+
+  ```html
+  <!-- HTML -->
+  <div id="app">
+    <p v-html="finishedLink"></p>
+
+  <!-- the v-html directive will ensure the finishedLink interpolated attribute
+      is rendered as HTML not text, making it a working link -->  
+  </div>
+  ```
