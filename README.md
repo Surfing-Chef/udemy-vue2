@@ -60,3 +60,34 @@ finishedLink: '<a href="http://surfing-chef.com">Surfing-Chef.com</a>'
       is rendered as raw HTML not text, making it a working link -->  
   </div>
   ```
+
+  - `v-on`: listens to an element to receive a DOM event from our template. It then specifies a method to execute when the DOM event occurs.
+  ```javascript
+  //JS
+  new Vue({
+    el: '#app',
+    data: {
+      counter: 0
+    },
+    methods: {
+      increase: function(){
+        this.counter++;
+      }
+    }
+  })
+
+  // creates the increase function that increases the
+  // counter value by one on each click
+  ```
+
+    ```html
+    <!-- HTML -->
+    <div id="app">
+      <button v-on:click="increase">Click Me</button>
+      <p>{{ counter }}</p>
+    </div>
+  
+    <!-- v-on waits for a click event from the button to
+    call the increase method -->  
+    </div>
+    ```

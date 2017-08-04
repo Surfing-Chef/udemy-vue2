@@ -9,26 +9,21 @@
 </head>
 <body>
   <div id="app">
-    <h1 v-once>{{ title }}</h1>
-    <p>{{ sayHello() }} - <a v-bind:href="link" target="_blank">Surfing-Chef.com</a></p>
-    <hr>
-    <p v-html="finishedLink"></p>
+    <button v-on:click="increase">Click Me</button>
+    <p>{{ counter }}</p>
   </div>
 
 <script type="text/javascript">
 new Vue({
-el: '#app',
-data: {
-  title: 'Hello World!',
-  link: 'http://surfing-chef.com',
-  finishedLink: '<a href="http://surfing-chef.com">Surfing-Chef.com</a>'
-},
-methods: {
-  sayHello : function() {
-    this.title = 'Hello';
-    return this.title;
+  el: '#app',
+  data: {
+    counter: 0
+  },
+  methods: {
+    increase: function(){
+      this.counter++;
+    }
   }
-}
 });
 </script>
 </body>
