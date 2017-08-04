@@ -16,5 +16,29 @@
   <a v-bind:href="link">Surfing-Chef</a>
   ```
 
-`v-once`:   
+- `v-once`: tell VueJS to only render the interpolated element once, to not update it when the code changes:
+```javascript
+// JS
+data: {
+  title: 'Hello World!',
+  link: 'http://surfing-chef.com',
+  finishedLink: '<a href="http://surfing-chef.com">Surfing-Chef.com</a>'
+},
+methods: {
+  sayHello : function() {
+    this.title = 'Hello';
+    return this.title;
+  }
+}
+// set the value of title initially as 'Hello World!',
+// then changes it in the sayHello() method
+```
+
+  ```html
+  <!-- HTML -->
+  <h1 v-once>{{ title }}</h1>
+
+  <!-- Returns "Hello World!" even after the function sayHello() overwrites it  -->
+  ```
+
 `v-html`: 
