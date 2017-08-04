@@ -9,16 +9,26 @@
 </head>
 <body>
   <div id="app">
-    <input type="text" v-on:input="changeTitle">
-    <p>{{ title }}</p>
+    <h1 v-once>{{ title }}</h1>
+    <p>{{ sayHello() }} - <a v-bind:href="link" target="_blank">Surfing-Chef.com</a></p>
+    <hr>
+    <p v-html="finishedLink"></p>
   </div>
 
 <script type="text/javascript">
 new Vue({
-  el: '#app',
-  data: {
-    title: 'Hello World!',
+el: '#app',
+data: {
+  title: 'Hello World!',
+  link: 'http://surfing-chef.com',
+  finishedLink: '<a href="http://surfing-chef.com">Surfing-Chef.com</a>'
+},
+methods: {
+  sayHello : function() {
+    this.title = 'Hello';
+    return this.title;
   }
+}
 });
 </script>
 </body>
