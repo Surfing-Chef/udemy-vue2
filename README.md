@@ -164,3 +164,7 @@ finishedLink: '<a href="http://surfing-chef.com">Surfing-Chef.com</a>'
   - use `computed` as best practice - more optimized for VueJS
   - `computed` won't work when asynchronous tasks are required to run, this is where watch is used
   - define which existing property to watch, and execute a function when change occurs
+
+- Saving Time with Shorthands
+  - `@click` is the same as `v-on:click`
+  - `:href` is the same as `v-bind:href`
