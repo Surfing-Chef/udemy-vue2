@@ -8,6 +8,7 @@
 - **el:** Connect to DOM
 - **data:** Store Data to be used
 - **computed:** Dependent Properties
+- **watch:** Execute code upon data changes
 - **methods:** Methods of Vue instance
 
 **Directives:** ***special tokens in the markup that tell the library to do something to a DOM element*** - an instruction placed in the code.  The argument is passed to the directive by using a colon then the argument (the attribute to bind).
@@ -158,3 +159,8 @@ finishedLink: '<a href="http://surfing-chef.com">Surfing-Chef.com</a>'
      output from the computed property (no parentheses) -->
     ```  
   - `methods` execute on every DOM update, `computed` caches results and doesn't recalculate if unnecessary  
+
+- Alternative to Computed Properties: Watching
+  - use `computed` as best practice - more optimized for VueJS
+  - `computed` won't work when asynchronous tasks are required to run, this is where watch is used
+  - define which existing property to watch, and execute a function when change occurs
