@@ -123,4 +123,20 @@ finishedLink: '<a href="http://surfing-chef.com">Surfing-Chef.com</a>'
     <p>{{ counter * 2 > 10 ? 'Greater than 10' : 'Smaller than 10' }}</p>
 
     <!-- Outputs 'Greater...' or 'Smaller...' - depending on counter value -->
-    ```
+    ```  
+
+- Using Two Way Data Binding
+  - the `v-model` directive sets up two-way data binding between the element its written on and the specified property:
+
+    ```HTML
+    <!-- HTML -->
+    <input type="text" v-model="name">
+
+    <!-- binds the input field to the name property of the template  -->
+    ```  
+
+- Binding Concepts So Far:
+  - ***interpolation***: most basic form of data binding using "Mustache" syntax
+  - ***v-bind***: reactively updates an HTML attribute
+  - ***v-on***: attaches an event listener to an element
+  - ***v-model***: create a two-way binding on a form input element or a component  

@@ -8,37 +8,26 @@
   <title>VueJS</title>
 </head>
 <body>
+
+
   <div id="app">
-    <button v-on:click="increase(2, $event)">Click Me</button>
-    <button v-on:click="counter++">Click Me2</button>
-    <p>{{ counter * 2 }}</p>
-    <p v-on:mousemove="updateCoordinates">
-      Coordinates: {{ x }} / {{ y }}
-      - <span v-on:mousemove.stop.prevent="">DEAD SPOT</span>
-    </p>
-    <input type="text" v-on:keyup.enter="alertMe">
+    <input type="text" v-model="name">
+    <p>{{ name }}</p>
   </div>
 
+
 <script type="text/javascript">
+
+
 new Vue({
   el: '#app',
   data: {
-    counter: 0,
-    x: 0,
-    y: 0
-  },
-  methods: {
-    increase: function(step, event){
-      this.counter+= step;
-    },
-    updateCoordinates: function(event){
-      this.x = event.clientX;
-      this.y = event.clientY;
-    }, alertMe: function() {
-      alert('Alert!');
-    }
+    name: 'Wade',
   }
 });
+
+
 </script>
+
 </body>
 </html>
