@@ -4,6 +4,12 @@
 [Section Link](https://www.udemy.com/vuejs-2-the-complete-guide/learn/v4/t/lecture/5940950?start=0)  
 
 #### NOTES: ####
+**Known Options for Vue Instance:**
+- **el:** Connect to DOM
+- **data:** Store Data to be used
+- **computed:** Dependent Properties
+- **methods:** Methods of Vue instance
+
 **Directives:** ***special tokens in the markup that tell the library to do something to a DOM element*** - an instruction placed in the code.  The argument is passed to the directive by using a colon then the argument (the attribute to bind).
 - `v-bind`: tells VueJS not to use the attribute normally, bind it to some data stored within the VueJS instance
   ```javascript
@@ -140,3 +146,15 @@ finishedLink: '<a href="http://surfing-chef.com">Surfing-Chef.com</a>'
   - ***v-bind***: reactively updates an HTML attribute
   - ***v-on***: attaches an event listener to an element
   - ***v-model***: create a two-way binding on a form input element or a component  
+
+- Reacting to Changes with Computed properties
+  - the `computed` object is added to a Vue instance as with `el, data` and `methods`
+  - can be used like a property in the `data` object:
+    ```HTML
+    <!-- HTML -->
+    <p>Result: {{ result() | output }}</p>
+
+    <!-- result is form the methods property (parentheses),
+     output from the computed property (no parentheses) -->
+    ```  
+  - `methods` execute on every DOM update, `computed` caches results and doesn't recalculate if unnecessary  
