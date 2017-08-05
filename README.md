@@ -62,7 +62,6 @@ finishedLink: '<a href="http://surfing-chef.com">Surfing-Chef.com</a>'
   ```
 
 **Events and Listeners**  
-
   - `v-on`: listens to an element to receive a DOM event from our template. It then specifies a method to execute when the DOM event occurs.
   ```javascript
   //JS
@@ -97,3 +96,11 @@ finishedLink: '<a href="http://surfing-chef.com">Surfing-Chef.com</a>'
 - Passing custom arguments with events:
   - `v-on:click="increase(arg)"`  
   - use reserved `$event` variable to access event object properties
+
+- Modifying and Event - with Event Modifiers
+  - [Event Modifiers](http://vuejs.org/v2/guide/events.html#Event-Modifiers)
+  - event modifiers such as `.stop` in `<span v-on:mousemove.stop="">DEAD SPOT</span>` act as intermediary function of sorts, running before the defined function  
+  - `.stop` stops the propagation of events at this point, a gate  
+  - `.prevent` prevents a default event from occuring  
+  - event modifiers can also be chained - i.e. `<span v-on:mousemove.stop.prevent="">DEAD SPOT</span>`
+  -[Key Modifiers](http://vuejs.org/v2/guide/events.html#Key-Modifiers)
