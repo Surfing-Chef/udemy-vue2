@@ -1,4 +1,12 @@
 # VUE 2 - UDEMY TUTORIALS #
 
-### SECTION ONE: Getting Started ###
-[Section Link](https://www.udemy.com/vuejs-2-the-complete-guide/learn/v4/t/lecture/5981760?start=0)
+## SECTION  ##
+Udemy Vue JS 2 - The Complete Guide - Section:   [https://www.udemy.com]()
+
+**JSFiddle Links:**  
+
+
+**Further Links:**  
+
+
+### NOTES: ###
