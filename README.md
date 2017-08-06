@@ -1,6 +1,6 @@
 # VUE 2 - UDEMY TUTORIALS #
 
-### SECTION Two: Using VueJS to Interact with the DOM ###
+## SECTION Two: Using VueJS to Interact with the DOM ##
 Udemy Vue JS 2 - The Complete Guide - Section 2:   [https://www.udemy.com](https://www.udemy.com/vuejs-2-the-complete-guide/learn/v4/t/lecture/5940950?start=0)
 
 **JSFiddle Links:**  
@@ -19,7 +19,7 @@ Official Docs - Events: http://vuejs.org/guide/events.html
 Official Docs - Computed Properties & Watchers: http://vuejs.org/guide/computed.html  
 Official Docs - Class and Style Binding: http://vuejs.org/guide/class-and-style.html  
 
-#### NOTES: ####
+### NOTES: ###
 **Known Options for Vue Instance:**
 - **el:** Connect to DOM
 - **data:** Store Data to be used
@@ -188,7 +188,7 @@ finishedLink: '<a href="http://surfing-chef.com">Surfing-Chef.com</a>'
   - `computed` won't work when asynchronous tasks are required to run, this is where watch is used
   - define which existing property to watch, and execute a function when change occurs
 
-  
+
 - Saving Time with Shorthands
   - `@click` is the same as `v-on:click`
   - `:href` is the same as `v-bind:href`
