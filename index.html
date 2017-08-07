@@ -8,23 +8,21 @@
   <title>VueJS</title>
 </head>
 <body>
+
   <div id="app">
-    <input type="text" v-on:input="changeTitle">
-    <p>{{ title }}</p>
+    <p>You can see me!</p>
+    <p>Do you also see me?</p>
   </div>
 
 <script type="text/javascript">
-new Vue({
-el: '#app',
-data: {
-  title: 'Hello World!'
-},
-methods: {
-  changeTitle : function(event) {
-    this.title = event.target.value;
+
+var vm = new Vue({
+  el: '#app',
+  data: {
+   show: true
   }
-}
 });
+
 </script>
 </body>
 </html>
