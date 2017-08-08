@@ -1,12 +1,18 @@
-# VUE 2 - UDEMY TUTORIALS #
+# vue2
 
-## SECTION Six: Development Workflow with Webpack and Vue CLI ##
-Udemy Vue JS 2 - The Complete Guide - Section 6:   [https://www.udemy.com](https://www.udemy.com/vuejs-2-the-complete-guide/learn/v4/t/lecture/5942272?start=0)
+> A Vue.js project
 
-**JSFiddle Links:**  
+## Build Setup
 
+``` bash
+# install dependencies
+npm install
 
-**Further Links:**  
+# serve with hot reload at localhost:8080
+npm run dev
 
+# build for production with minification
+npm run build
+```
 
-### NOTES: ###
+For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
