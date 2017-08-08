@@ -4,27 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <script src="vue.js"></script>
-  <title>VueJS</title>
+
+  <title>Document</title>
 </head>
 <body>
+
   <div id="app">
-    <input type="text" v-on:input="changeTitle">
-    <p>{{ title }}</p>
+    <h1 ref="heading">{{ title }}</h1>
+    <button v-on:click="show">Show Paragraph</button>
+    <p v-if="showParagraph">This is not always visible</p>
   </div>
 
-<script type="text/javascript">
-new Vue({
-el: '#app',
-data: {
-  title: 'Hello World!'
-},
-methods: {
-  changeTitle : function(event) {
-    this.title = event.target.value;
-  }
-}
-});
-</script>
+<script src="app.js"></script>
 </body>
 </html>
