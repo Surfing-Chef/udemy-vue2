@@ -3,11 +3,10 @@
 ## SECTION Six: Development Workflow with Webpack and Vue CLI ##
 Udemy Vue JS 2 - The Complete Guide - Section 6:   [https://www.udemy.com](https://www.udemy.com/vuejs-2-the-complete-guide/learn/v4/t/lecture/5942272?start=0)
 
-**JSFiddle Links:**  
-
-
 **Further Links:**  
-
+More about ".vue" files from the official Docs: http://vuejs.org/guide/single-file-components.html  
+More about the render() method in the official Docs: http://vuejs.org/guide/render-function.html
+More about the CLI on GitHub: https://github.com/vuejs/vue-cli  
 
 ### NOTES: ###
 **Create a New Project:**
