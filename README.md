@@ -55,7 +55,7 @@ new Vue({
 ```
 
 **Creating a Component**  
-- a template can only contain one root element:
+A template can only contain one root element.
 ```html
 // wrong - no root container
 <template>
@@ -107,7 +107,21 @@ new Vue({
 │   ├───shop
 │   │   ├───main
 │   │   └───checkout
+```
+**Scoping Component Styles**  
+By default, styles in a Vue component are global.  To specify the scope to remain within the component use the `scoped` attribute:
+```javascript
+// global
+<style>
+ div {
+	 1px sold red;
+ }
+<style>
 
-
-
+// scoped
+<style scoped>
+ div {
+	 1px sold red;
+ }
+<style>
 ```
