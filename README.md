@@ -73,3 +73,41 @@ new Vue({
   </div>
 </template>
 ```
+
+**Folder Structures**
+```bash
+// Components sorted
+├───src
+│   │   App.vue
+│   │   main.js
+│   │
+│   ├───assets
+│   │       logo.png
+│   │
+│   └───components
+│       ├───Server
+│       │       ServerDetails.vue
+│       │       Servers.vue
+│       │
+│       └───Shared
+│               Footer.vue
+│               Header.vue
+
+// Alternatively grouped by feature
+├───src
+│   │   App.vue
+│   │   main.js
+│   │
+│   ├───assets
+│   │       logo.png
+│   │
+│   ├───users
+│   │   ├───account
+│   │   └───analytics
+│   ├───shop
+│   │   ├───main
+│   │   └───checkout
+
+
+
+```
