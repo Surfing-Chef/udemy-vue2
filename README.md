@@ -7,7 +7,7 @@ Udemy Vue JS 2 - The Complete Guide - Section 7: [https://www.udemy.com](https:/
 
 
 **Further Links:**  
-
+VueJS Components: http://vuejs.org/guide/components.html
 
 ### NOTES: ###
 **Registering Components**  
